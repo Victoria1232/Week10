@@ -33,19 +33,19 @@ public class AdminFilter implements Filter {
       
         User user = (User) session.getAttribute("user");
 
-        if (user.getRole().getRoleId() == 1) {
+        if (user.getRole().getRoleId() == 2) {
 
-            chain.doFilter(request, response); // execute the servlet
-             HttpServletResponse httpResponse = (HttpServletResponse) response;
-             httpResponse.sendRedirect("admin");
-           
-               return;
-            // code that is executed after the servlet
-        } else {
             HttpServletResponse httpResponse = (HttpServletResponse) response;
-            httpResponse.sendRedirect("login");
+            httpResponse.sendRedirect("notes");
             return;
-        }
+           
+        } 
+        
+        
+        
+      chain.doFilter(request, response); // execute the servlet
+           
+        
 
     }
 

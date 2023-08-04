@@ -36,7 +36,7 @@ public class LoginServlet extends HttpServlet {
         
         HttpSession session = request.getSession();
         session.setAttribute("email", email);
-           session.setAttribute("user", user);
+        session.setAttribute("user", user);
            
        
         if (user.getRole().getRoleId() == 1) {
@@ -45,6 +45,6 @@ public class LoginServlet extends HttpServlet {
             response.sendRedirect("notes");
         }
         
-        response.sendRedirect("notes");
+
     }
 }
