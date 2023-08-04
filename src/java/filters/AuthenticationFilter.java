@@ -22,6 +22,7 @@ public class AuthenticationFilter implements Filter {
             throws IOException, ServletException {
 
             // code that is executed before the servlet
+            // to make sure  user is authenticated 
             HttpServletRequest httpRequest = (HttpServletRequest)request;
             HttpSession session = httpRequest.getSession();
             String email = (String)session.getAttribute("email");
