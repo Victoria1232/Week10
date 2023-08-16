@@ -22,7 +22,7 @@ import javax.xml.bind.annotation.XmlRootElement;
 
 /**
  *
- * @author awarsyle
+ * @author Victo
  */
 @Entity
 @Table(name = "note")
@@ -51,6 +51,7 @@ public class Note implements Serializable {
     private User owner;
 
     public Note() {
+        
     }
 
     public Note(Integer noteId) {
