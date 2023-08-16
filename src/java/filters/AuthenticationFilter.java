@@ -35,7 +35,7 @@ public class AuthenticationFilter implements Filter {
             
             chain.doFilter(request, response); // execute the servlet
             
-            // code that is executed after the servlet
+            // code executed after the servlet
             
         
     }
