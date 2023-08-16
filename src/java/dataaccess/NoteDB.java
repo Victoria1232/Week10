@@ -17,6 +17,7 @@ public class NoteDB {
         } finally {
             em.close();
         }
+        
     }
 
     public Note get(int noteId) throws Exception {
